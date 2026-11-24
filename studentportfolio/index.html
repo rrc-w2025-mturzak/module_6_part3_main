@@ -1,28 +1,46 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feranmi Ige - Student Portfolio</title>
-    <!-- Bootstrap CSS CDN -->
+    <title>August Evergreen - Student Portfolio</title>
+
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Navbar -->
+
+    <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Feranmi Ige</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <a class="navbar-brand" href="#">August Evergreen</a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#modules">Modules</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Technologies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -31,12 +49,18 @@
     <!-- Hero Section -->
     <section id="hero" class="text-center text-white d-flex align-items-center">
         <div class="container">
-            <h1>Welcome to My Portfolio I am deploying a microservice built in different programming language and connecting the services
-                via API so that the services can communicate with each other and use NGINX to serve as entrance into the application.
-            This deployment is via Kubernetes </h1>
-            <p>Hi, I’m Feranmi Ige, Highly analytical and versatile Quality Assurance Lead with a unique background spanning SQL Development, Data Analytics, and Software Testing. 
-                Leverages a deep understanding of data integrity, system architecture, and quality methodologies to deliver robust, high-performance software solutions, now seamlessly 
-                integrating development responsibilities with QA leadership. Watch this space</p>
+            <h1>Welcome to My Student Portfolio</h1>
+
+            <p class="lead">
+                My journey through cloud computing, containerization,
+                microservices, Kubernetes, and DevOps automation.
+            </p>
+
+            <p>
+                This portfolio showcases the projects and practical skills
+                I have developed throughout COMP-4001.
+            </p>
+
             <a href="#about" class="btn btn-primary">Learn More</a>
         </div>
     </section>
@@ -45,82 +69,216 @@
     <section id="about" class="py-5">
         <div class="container">
             <h2 class="text-center mb-4">About Me</h2>
+
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <h4>Student Information</h4>
+
+                    <p><strong>Name:</strong> August Evergreen</p>
+                    <p><strong>Student Number:</strong> 0422166</p>
+                    <p><strong>Course:</strong> COMP-4001 - Developing in a DevOps Environment</p>
+
+                    <p>
+                        I am a student learning the principles and practical
+                        applications of cloud computing and DevOps.
+                        Throughout this course, I have been developing
+                        hands-on experience with containers, application
+                        deployment, microservices, automation, and
+                        Kubernetes management.
+                    </p>
+
+                    <p>
+                        My goal is to understand how modern applications
+                        are developed, deployed, maintained, and updated
+                        through automated development and deployment pipelines.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Modules Section -->
+    <section id="modules" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">COMP-4001 Course Progress</h2>
+
             <div class="row">
-                <div class="col-md-4 text-center">
-                    <img src="assets/profile.jpg" alt="Feranmi Ige" class="rounded-circle mb-3" width="200">
+
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Module 3 - Introduction to Cloud and Container Basics
+                            </h5>
+                            <p class="card-text">
+                                Introduction to cloud computing concepts
+                                and the fundamentals of containerization.
+                            </p>
+                            <span class="badge bg-success">Completed</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-8">
-                    <p>I’m a IT/DevOps instructor with a love for coding, problem-solving, and building projects that make a difference. I enjoy learning new technologies and collaborating with others to turn ideas into reality.</p>
+
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Module 4 - Docker Fundamentals
+                            </h5>
+                            <p class="card-text">
+                                Learning how to create, configure, build,
+                                and run Docker containers and images.
+                            </p>
+                            <span class="badge bg-success">Completed</span>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Module 5 - Microservices Architecture and CI/CD
+                            </h5>
+                            <p class="card-text">
+                                Developing applications using microservices,
+                                Docker Compose, and continuous integration
+                                and deployment concepts.
+                            </p>
+                            <span class="badge bg-success">Completed</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Module 6 - Kubernetes Management
+                            </h5>
+                            <p class="card-text">
+                                Deploying containerized applications using
+                                Kubernetes and Minikube, automating image
+                                builds with GitHub Actions, and managing
+                                deployments using Argo CD and GitOps.
+                            </p>
+                            <span class="badge bg-primary">In Progress</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-5 bg-light">
+    <section id="projects" class="py-5">
         <div class="container">
             <h2 class="text-center mb-4">Projects</h2>
+
             <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card">
+
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
                         <div class="card-body">
-                            <h5 class="card-title">Task Manager App</h5>
-                            <p class="card-text">A simple app to organize tasks, built with Python and Tkinter.</p>
+                            <h5 class="card-title">Banking Web Application</h5>
+                            <p class="card-text">
+                                A banking application developed using
+                                microservices architecture. It includes
+                                features such as user authentication,
+                                deposits, withdrawals, and balance management.
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
+
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
                         <div class="card-body">
-                            <h5 class="card-title">Weather Dashboard</h5>
-                            <p class="card-text">A web app showing live weather data using JavaScript and APIs.</p>
+                            <h5 class="card-title">Containerized Microservices</h5>
+                            <p class="card-text">
+                                A multi-service application using Docker
+                                containers, separate backend and frontend
+                                services, and NGINX as a reverse proxy.
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
+
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
                         <div class="card-body">
-                            <h5 class="card-title">Banking Webapp</h5>
-                            <p class="card-text">This is a simple banking application with basic functions like withdraw, deposit and check balance</p>
-                            <!-- <a href="/banking/"target = "_blank">View Banking App</a> -->
-                            <a href="/api/login">Banking App</a>
+                            <h5 class="card-title">Kubernetes Deployment</h5>
+                            <p class="card-text">
+                                Deploying and managing application services
+                                in a Kubernetes cluster using Minikube,
+                                deployments, services, persistent storage,
+                                and horizontal pod autoscaling.
+                            </p>
                         </div>
                     </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">CI/CD and GitOps Pipeline</h5>
+                            <p class="card-text">
+                                Automating Docker image builds and publishing
+                                through GitHub Actions, with Argo CD managing
+                                Kubernetes deployments using GitOps.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section id="skills" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Technologies and Tools</h2>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Development</h5>
+                    <ul>
+                        <li>HTML and CSS</li>
+                        <li>JavaScript</li>
+                        <li>Python and Flask</li>
+                        <li>Node.js</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6">
+                    <h5>DevOps and Deployment</h5>
+                    <ul>
+                        <li>Docker and Docker Compose</li>
+                        <li>Kubernetes and Minikube</li>
+                        <li>Git and GitHub</li>
+                        <li>GitHub Actions</li>
+                        <li>GitHub Container Registry</li>
+                        <li>Argo CD</li>
+                        <li>NGINX</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="py-5">
+    <!-- Contact Section -->
+    <footer id="contact" class="bg-dark text-white text-center py-4">
         <div class="container">
-            <h2 class="text-center mb-4">Skills</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <p>Python</p>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: 80%;">80%</div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <p>HTML/CSS</p>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: 90%;">90%</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Footer -->
-    <footer id="contact" class="bg-dark text-white text-center py-3">
-        <div class="container">
-            <p>Contact me at: feranmi_ige@example.com | GitHub: github.com/Feranmi Ige</p>
-            <p>&copy; 2025 Feranmi Ige. All rights reserved.</p>
+            <h5>Contact</h5>
+            <p>GitHub: rrc-w2025-mturzak</p>
+            <p>&copy; 2026 August. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- Bootstrap JS CDN -->
+    <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
